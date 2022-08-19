@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "Salamina";
+    src: url("SALAMINA.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes neon {
+    from {
+        filter: drop-shadow(0 0 0 rgb(255, 153, 0));
+    }
+    to {
+        filter: drop-shadow(0 0 50px rgb(252, 255, 72));
+    }
+}
+
+body {
+    background-color: orchid;
+    text-align: center;
+    font-family: "Salamina";
+}
+
+#centerdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#maindiv {
+    background-color: rgb(250, 240, 220);
+    height: 500px;
+    width: 460px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+#charles {
+    height: 200px;
+    margin: auto;
+}
+
+.heartbutton {
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    border: 0px;
+    transform: rotate(-45deg);
+    color: transparent;
+    font-family: 'Silkscreen', cursive;
+}
+
+.heartbutton::after {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    background-color: inherit;
+    content: '';
+    top: -50%;
+    left: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.heartbutton::before {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    background-color: inherit;
+    content: '';
+    top: 0;
+    right: -50%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.heartbutton:hover {
+    height: 85px;
+    width: 85px;
+    background-color: rgb(228, 140, 140);
+    color:black;
+    text-decoration: none;
+}
+
+.modal-content {
+    background-color: rgb(255, 209, 209);
+}
+
+.textoLat {
+    color:rgb(255, 208, 0);
+    text-decoration: underline;
+    animation: neon 0.5s alternate infinite ease-in-out;
+}
