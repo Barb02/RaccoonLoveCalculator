@@ -17,7 +17,7 @@
 body {
     background-color: orchid;
     text-align: center;
-    font-family: "Salamina";
+    font-family: 'Lora', serif;
 }
 
 #centerdiv {
@@ -48,7 +48,8 @@ body {
     background-color: red;
     border: 0px;
     transform: rotate(-45deg);
-    color: transparent;
+    color: black;
+    text-decoration: none;
     font-family: 'Silkscreen', cursive;
 }
 
@@ -77,8 +78,6 @@ body {
 }
 
 .heartbutton:hover {
-    height: 85px;
-    width: 85px;
     background-color: rgb(228, 140, 140);
     color:black;
     text-decoration: none;
@@ -92,4 +91,5 @@ body {
     color:rgb(255, 208, 0);
     text-decoration: underline;
     animation: neon 0.5s alternate infinite ease-in-out;
+    font-family: "Salamina";
 }
