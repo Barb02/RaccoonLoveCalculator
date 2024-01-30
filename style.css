@@ -1,10 +1,3 @@
-@font-face {
-    font-family: "Salamina";
-    src: url("SALAMINA.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
-
 @keyframes neon {
     from {
         filter: drop-shadow(0 0 0 rgb(255, 153, 0));
@@ -37,7 +30,7 @@ body {
     margin: 30px 0px 50px 0px;
 }
 
-#charles {
+#raccoon {
     height: 200px;
     margin: auto;
 }
@@ -91,5 +84,11 @@ body {
     color:rgb(255, 208, 0);
     text-decoration: underline;
     animation: neon 0.5s alternate infinite ease-in-out;
-    font-family: "Salamina";
+}
+
+#footer {
+    background-color: rgb(255, 201, 85); 
+    margin-top: 150px; 
+    max-width: 100%;
+
 }
